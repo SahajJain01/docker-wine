@@ -538,6 +538,7 @@ elif [ "${USE_RDP_SERVER}" != "no" ]; then
 
     add_run_arg --env="RDP_SERVER=yes"
     add_run_arg --publish="${HOST_RDP_PORT}:3389/tcp"
+    add_run_arg --publish="3000:3000/tcp"
 
     case "${USE_RDP_SERVER}" in
         interactive)
